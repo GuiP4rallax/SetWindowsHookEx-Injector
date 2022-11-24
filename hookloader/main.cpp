@@ -37,7 +37,7 @@ int wmain(int argc, wchar_t* argv[], wchar_t* envp[]) {
 	}
 
 	// Getting exported function address
-	HOOKPROC addr = (HOOKPROC)GetProcAddress(dll, "NextHook"); //export see dllmain.cpp "C" __declspec(dllexport) int NextHook(int code, WPARAM wParam, LPARAM lParam)
+	HOOKPROC addr = (HOOKPROC)GetProcAddress(dll, "Joking"); //export see dllmain.cpp "C" __declspec(dllexport) int NextHook(int code, WPARAM wParam, LPARAM lParam)
 	if (addr == NULL) {
 		cout << "[ FAILED ] The function was not found." << endl;
 		system("pause");
